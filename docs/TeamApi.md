@@ -1,0 +1,188 @@
+# \TeamApi
+
+All URIs are relative to *https://slack.com/api*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**TeamAccessLogs**](TeamApi.md#TeamAccessLogs) | **Get** /team.accessLogs | 
+[**TeamBillableInfo**](TeamApi.md#TeamBillableInfo) | **Get** /team.billableInfo | 
+[**TeamInfo**](TeamApi.md#TeamInfo) | **Get** /team.info | 
+[**TeamIntegrationLogs**](TeamApi.md#TeamIntegrationLogs) | **Get** /team.integrationLogs | 
+[**TeamProfileGet**](TeamApi.md#TeamProfileGet) | **Get** /team.profile.get | 
+
+
+# **TeamAccessLogs**
+> map[string]interface{} TeamAccessLogs(ctx, optional)
+
+
+Gets the access logs for the current team.
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+ **optional** | ***TeamAccessLogsOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a pointer to a TeamAccessLogsOpts struct
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **count** | **optional.String**|  | 
+ **token** | **optional.String**| Authentication token. Requires scope: &#x60;admin&#x60; | 
+ **page** | **optional.String**|  | 
+ **before** | **optional.Int32**| End of time range of logs to include in results (inclusive). | 
+
+### Return type
+
+[**map[string]interface{}**](interface{}.md)
+
+### Authorization
+
+[slackAuth](../README.md#slackAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **TeamBillableInfo**
+> map[string]interface{} TeamBillableInfo(ctx, )
+
+
+Gets billable users information for the current team.
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**map[string]interface{}**](interface{}.md)
+
+### Authorization
+
+[slackAuth](../README.md#slackAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **TeamInfo**
+> map[string]interface{} TeamInfo(ctx, optional)
+
+
+Gets information about the current team.
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+ **optional** | ***TeamInfoOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a pointer to a TeamInfoOpts struct
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **optional.String**| Authentication token. Requires scope: &#x60;team:read&#x60; | 
+ **team** | **optional.String**| Team to get info on, if omitted, will return information about the current team. Will only return team that the authenticated token is allowed to see through external shared channels | 
+
+### Return type
+
+[**map[string]interface{}**](interface{}.md)
+
+### Authorization
+
+[slackAuth](../README.md#slackAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **TeamIntegrationLogs**
+> map[string]interface{} TeamIntegrationLogs(ctx, optional)
+
+
+Gets the integration logs for the current team.
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+ **optional** | ***TeamIntegrationLogsOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a pointer to a TeamIntegrationLogsOpts struct
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **count** | **optional.String**|  | 
+ **changeType** | **optional.String**| Filter logs with this change type. Defaults to all logs. | 
+ **appId** | **optional.Int32**| Filter logs to this Slack app. Defaults to all logs. | 
+ **token** | **optional.String**| Authentication token. Requires scope: &#x60;admin&#x60; | 
+ **user** | **optional.String**| Filter logs generated by this user’s actions. Defaults to all logs. | 
+ **serviceId** | **optional.Int32**| Filter logs to this service. Defaults to all logs. | 
+ **page** | **optional.String**|  | 
+
+### Return type
+
+[**map[string]interface{}**](interface{}.md)
+
+### Authorization
+
+[slackAuth](../README.md#slackAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **TeamProfileGet**
+> map[string]interface{} TeamProfileGet(ctx, optional)
+
+
+Retrieve a team's profile.
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+ **optional** | ***TeamProfileGetOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a pointer to a TeamProfileGetOpts struct
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **optional.String**| Authentication token. Requires scope: &#x60;users.profile:read&#x60; | 
+ **visibility** | **optional.String**| Filter by visibility. | 
+
+### Return type
+
+[**map[string]interface{}**](interface{}.md)
+
+### Authorization
+
+[slackAuth](../README.md#slackAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

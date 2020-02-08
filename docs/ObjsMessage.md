@@ -1,0 +1,50 @@
+# ObjsMessage
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Attachments** | [**[]ObjsMessageAttachments**](objs_message_attachments.md) |  | [optional] [default to null]
+**Blocks** | [***Blocks**](blocks.md) |  | [optional] [default to null]
+**BotId** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
+**ClientMsgId** | **string** |  | [optional] [default to null]
+**Comment** | [***ObjsComment**](objs_comment.md) |  | [optional] [default to null]
+**DisplayAsBot** | **bool** |  | [optional] [default to null]
+**File** | [***ObjsFile**](objs_file.md) |  | [optional] [default to null]
+**Files** | [**[]ObjsFile**](objs_file.md) |  | [optional] [default to null]
+**Icons** | [***ObjsMessageIcons**](objs_message_icons.md) |  | [optional] [default to null]
+**Inviter** | [***DefsUserId**](defs_user_id.md) |  | [optional] [default to null]
+**IsDelayedMessage** | **bool** |  | [optional] [default to null]
+**IsIntro** | **bool** |  | [optional] [default to null]
+**IsStarred** | **bool** |  | [optional] [default to null]
+**LastRead** | [***DefsTs**](defs_ts.md) |  | [optional] [default to null]
+**LatestReply** | [***DefsTs**](defs_ts.md) |  | [optional] [default to null]
+**Name** | **string** |  | [optional] [default to null]
+**OldName** | **string** |  | [optional] [default to null]
+**ParentUserId** | [***DefsUserId**](defs_user_id.md) |  | [optional] [default to null]
+**Permalink** | **string** |  | [optional] [default to null]
+**PinnedTo** | [**[]DefsChannel**](defs_channel.md) |  | [optional] [default to null]
+**Purpose** | **string** |  | [optional] [default to null]
+**Reactions** | [**[]ObjsReaction**](objs_reaction.md) |  | [optional] [default to null]
+**Replies** | [**[]ObjsMessageReplies**](objs_message_replies.md) |  | [optional] [default to null]
+**ReplyCount** | **int32** |  | [optional] [default to null]
+**ReplyUsers** | [**[]DefsUserId**](defs_user_id.md) |  | [optional] [default to null]
+**ReplyUsersCount** | **int32** |  | [optional] [default to null]
+**SourceTeam** | [***DefsWorkspaceId**](defs_workspace_id.md) |  | [optional] [default to null]
+**Subscribed** | **bool** |  | [optional] [default to null]
+**Subtype** | **string** |  | [optional] [default to null]
+**Team** | [***DefsWorkspaceId**](defs_workspace_id.md) |  | [optional] [default to null]
+**Text** | **string** |  | [default to null]
+**ThreadTs** | [***DefsTs**](defs_ts.md) |  | [optional] [default to null]
+**Topic** | **string** |  | [optional] [default to null]
+**Ts** | [***DefsTs**](defs_ts.md) |  | [default to null]
+**Type_** | **string** |  | [default to null]
+**UnreadCount** | **int32** |  | [optional] [default to null]
+**Upload** | **bool** |  | [optional] [default to null]
+**User** | [***DefsUserId**](defs_user_id.md) |  | [optional] [default to null]
+**UserProfile** | [***ObjsUserProfileShort**](objs_user_profile_short.md) |  | [optional] [default to null]
+**UserTeam** | [***DefsWorkspaceId**](defs_workspace_id.md) |  | [optional] [default to null]
+**Username** | **string** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
